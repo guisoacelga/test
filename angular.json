@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "738e92bd-efba-443c-9b39-97d2e605a20f"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,7 +34,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss", "src/material.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.scss",
+              "src/material.scss"
             ],
             "scripts": []
           },

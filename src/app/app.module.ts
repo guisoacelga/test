@@ -14,6 +14,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import {PastTrainingsComponent} from "./training/past-trainings/past-trainings.component";
 import {NewTrainingComponent} from "./training/new-training/new-training.component";
 import {TrainingComponent} from "./training/training.component";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatSidenav, MatSidenavModule} from "@angular/material/sidenav";
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,9 @@ import {TrainingComponent} from "./training/training.component";
     PastTrainingsComponent,
     NewTrainingComponent,
     WelcomeComponent,
-    TrainingComponent
+    TrainingComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     AppRoutingModule,
@@ -34,7 +40,9 @@ import {TrainingComponent} from "./training/training.component";
     MaterialModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    FlexLayoutModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
